@@ -31,6 +31,14 @@
     }
     .container{max-width:1000px;margin:32px auto;padding:20px;}
     header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:24px;}
+    .profile{display:flex;align-items:center;gap:16px;}
+    .profile img{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--accent);
+    }
     h1{font-size:1.8rem;margin-bottom:4px;}
     p.role{color:var(--muted);}
     .actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
@@ -54,9 +62,12 @@
 <body>
   <div class="container">
     <header>
-      <div>
-        <h1>Aananth K</h1>
-        <p class="role">Full Stack Developer</p>
+      <div class="profile">
+        <img src="profile.jpg" alt="Aananth K">
+        <div>
+          <h1>Aananth K</h1>
+          <p class="role">Full Stack Developer</p>
+        </div>
       </div>
       <div class="actions">
         <a class="btn" href="https://linkedin.com/in/aananth-k" target="_blank">LinkedIn</a>
